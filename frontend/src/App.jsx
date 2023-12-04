@@ -1,11 +1,13 @@
+import * as React from 'react';
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './styles/App.css';
+import axios from 'axios';
+import { Button, TextField } from '@mui/material';
+import Home from './components/Home';
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
 
+<<<<<<< HEAD
   return (
     <>
       <div>
@@ -31,5 +33,18 @@ function App() {
     </>
   )
 }
+=======
+  const [page, setPage] = useState("home");
+>>>>>>> e508984 (Implement homepage)
 
-export default App
+  if (page === "home") {
+    return <Home setPage={setPage} />
+  } 
+  else {
+    return (
+      <>
+        page not found
+      </>
+    )
+  }
+}
