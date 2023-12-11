@@ -1,50 +1,22 @@
 import * as React from 'react';
 import { useState } from 'react'
 import './styles/App.css';
-import axios from 'axios';
-import { Button, TextField } from '@mui/material';
 import Home from './components/Home';
+import Generate from './components/Generate';
+
 
 export default function App() {
 
-<<<<<<< HEAD
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>StudySidekick</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
-=======
+  // setPage is a function that we pass to the child components. 
+  // They can call the function to change page here.
   const [page, setPage] = useState("home");
->>>>>>> e508984 (Implement homepage)
 
   if (page === "home") {
     return <Home setPage={setPage} />
-  } 
-  else {
+  }
+   else {
     return (
-      <>
-        page not found
-      </>
+     <Generate setPage={setPage} />
     )
   }
 }
