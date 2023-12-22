@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useState } from 'react'
-import './styles/App.css';
+import './components/App.css';
 import Home from './components/Home';
 import Generate from './components/Generate';
 
@@ -14,9 +14,9 @@ export default function App() {
   if (page === "home") {
     return <Home setPage={setPage} />
   }
-   else {
+  else {
     return (
-     <Generate setPage={setPage} />
+      <Generate setPage={setPage} />
     )
   }
 }

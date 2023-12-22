@@ -1,0 +1,19 @@
+  @import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+
+  .background-image {
+    text-align: center;
+    background-image: url("https://i.imgur.com/0PH1e3k.png");
+    position: fixed;
+    min-width: 100%;
+    min-height: 120%;
+    background-size: cover;
+    background-position: center;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+  }
+
+  .position-bottom {
+    top: 70%;
+  }
